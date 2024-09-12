@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant website</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font Inter link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font poppins link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+      .containers {
+        max-width: 1320px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="containers md:p-0 p-7">
+      <!-- nav section -->
+      <nav class="flex justify-between poppins md:pt-[35px] md:pb-[60px] py-3">
+        <div class="">
+          <img src="./Images/nav-logo.png" alt="" />
+        </div>
+        <div class="block md:hidden items-center">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex gap-[55px] items-center">
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Home</a
+          >
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Menu
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Services
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Offers</a
+          >
+        </div>
+        <div class="hidden md:flex gap-[55px] items-center">
+          <i class="fa-solid fa-magnifying-glass hover:text-[#39DB4A]"></i>
+          <i class="fa-solid fa-bag-shopping hover:text-[#39DB4A]"></i>
+
+          <button
+            class="hover:text-white border border-[#39DB4A] rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-5"
+            type="submit"
+          >
+            <i class="fa-solid fa-phone-volume"></i>
+            Contact
+          </button>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-[5rem]">
+          <!-- div1 -->
+          <div class="inter pt-[50px]">
+            <h1 class="md:text-6xl text-[42px] md:leading-[90px] font-[600]">
+              Dive into Delights <br />
+              Of Delectable <span class="text-[#39DB4A]">Food</span>
+            </h1>
+            <p
+              class="text-[#4A4A4A] md:text-[26px] text-[16px] md:leading-[44px] pt-[58px] pb-[70px]"
+            >
+              Where Each Plate Weaves a Story of Culinary <br />
+              Mastery and Passionate Craftsmanship
+            </p>
+
+            <div class="flex gap-3">
+              <div>
+                <button
+                  class="hover:text-white rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-5 shadow-xl"
+                  type="submit"
+                >
+                  Order Now
+                </button>
+              </div>
+              <div>
+                <button
+                  class="hover:text-white rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-5 shadow-xl"
+                  type="submit"
+                >
+                  Watch Video
+                </button>
+              </div>
+              <div
+                class="flex items-center shadow-xl hover:bg-orange-400 w-[50px] justify-center rounded-full"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <!-- div2 -->
+          <div class="relative mt-[-51px]">
+            <img
+              class="absolute md:max-h-[590.97px] md:max-w-[569.7px] max-w-[403.7px] max-h-[] top-[68px] left-[-22px]"
+              src="./Images/girl-bg.png"
+              alt=""
+            />
+            <img
+              class="absolute md:max-h-[636.97px] md:max-w-[601.7px] max-w-[423.7px] mt-[56px] top-[-62px] left-[-52px]"
+              src="./Images/girl.png"
+              alt=""
+            />
+            <img
+              class="hidden md:block absolute top-[49px] left-[-133px]"
+              src="./Images/comment-down.png"
+              alt=""
+            />
+            <img
+              class="hidden md:block absolute top-[98px] left-[-4.75rem]"
+              src="./Images/spicy.png"
+              alt=""
+            />
+            <!-- abs-div1 -->
+            <div
+              class="absolute md:bottom-[-138px] md:left-[-49px] bottom-[-431px] flex gap-[20px] bg-white p-3 rounded-lg shadow-xl"
+            >
+              <div>
+                <img src="./Images/b-abs-1.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">Spicy noodles</p>
+                <div>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                </div>
+                <p>$18.00</p>
+              </div>
+            </div>
+
+            <!-- abs-div2 -->
+            <div
+              class="absolute md:bottom-[-136px] md:left-[17.25rem] bottom-[-570px] left-[85px] flex gap-[20px] bg-white p-3 rounded-lg shadow-xl"
+            >
+              <div>
+                <img src="./Images/b-abs-1.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">Vegetarian salad</p>
+                <div>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                  <i class="fa-regular fa-star text-[#FFE605]"></i>
+                </div>
+                <p>$23.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular section -->
+      <section class="inter md:mt-[300px] mt-[683px]">
+        <!-- 1st div -->
+        <div class="flex flex-col text-center">
+          <p class="text-[#FF6868] text-xl leading-[24px]">
+            Customer Favorites
+          </p>
+          <h1 class="text-6xl leading-[72px] pt-[30px] font-bold">
+            Popular Catagories
+          </h1>
+        </div>
+        <!-- 2nd div -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 py-14">
+          <!-- inner-1 -->
+          <div class="p-3 shadow-xl rounded-[40px]">
+            <div
+              style="background-image: url('./Images/pop-bg.png')"
+              class="flex justify-center items-center bg-cover bg-center h-[200px] w-[200px] mx-auto"
+            >
+              <img class="" src="./Images/pop-1.png" alt="" />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-[#1E1E1E] text-[30px] leading-[36px] font-semibold py-3"
+              >
+                Main Dish
+              </p>
+              <p>(86 dishes)</p>
+            </div>
+          </div>
+          <!-- inner-1 -->
+          <div class="p-3 shadow-xl rounded-[40px]">
+            <div
+              style="background-image: url('./Images/pop-bg.png')"
+              class="flex justify-center items-center bg-cover bg-center h-[200px] w-[200px] mx-auto"
+            >
+              <img class="" src="./Images/pop-2.png" alt="" />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-[#1E1E1E] text-[30px] leading-[36px] font-semibold py-3"
+              >
+                Break Fast
+              </p>
+              <p>(12 break fast)</p>
+            </div>
+          </div>
+          <!-- inner-1 -->
+          <div class="p-3 shadow-xl rounded-[40px]">
+            <div
+              style="background-image: url('./Images/pop-bg.png')"
+              class="flex justify-center items-center bg-cover bg-center h-[200px] w-[200px] mx-auto"
+            >
+              <img class="" src="./Images/pop-3.png" alt="" />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-[#1E1E1E] text-[30px] leading-[36px] font-semibold py-3"
+              >
+                Dessert
+              </p>
+              <p>(48 dessert)</p>
+            </div>
+          </div>
+          <!-- inner-1 -->
+          <div class="p-3 shadow-xl rounded-[40px]">
+            <div
+              style="background-image: url('./Images/pop-bg.png')"
+              class="flex justify-center items-center bg-cover bg-center h-[200px] w-[200px] mx-auto"
+            >
+              <img class="" src="./Images/pop-4.png" alt="" />
+            </div>
+            <div class="text-center">
+              <p
+                class="text-[#1E1E1E] text-[30px] leading-[36px] font-semibold py-3"
+              >
+                Browse All
+              </p>
+              <p>(255 Items)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- standout section -->
+      <section class="inter pt-[200px]">
+        <div class="md:flex justify-between grid grid-cols-1 gap-[3.5rem]">
+          <!-- 1st -->
+          <div class="flex flex-col">
+            <p class="text-[#FF6868] text-xl leading-[24px]">Special Dishes</p>
+            <h1 class="text-6xl leading-[72px] pt-[30px] font-bold">
+              Standout Dishes <br />
+              From Our Menu
+            </h1>
+          </div>
+          <!-- 2nd -->
+          <div class="flex gap-12 items-end">
+            <div
+              class="bg-[#EFEFEF] flex items-center hover:bg-[#39DB4A] hover:text-white w-[50px] h-[50px] justify-center rounded-full"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div
+              class="bg-[#EFEFEF] flex items-center hover:bg-[#39DB4A] hover:text-white w-[50px] h-[50px] justify-center rounded-full"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-[63px]"
+        >
+          <!-- 1 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Fattoush salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">24.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.9
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-2.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Vegetable salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">26.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.6
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- what customer section -->
+      <section class="py-11 mt-[400px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-[16.5rem]">
+          <!-- 1 -->
+          <div
+            style="background-image: url('./Images/chef-bg.png')"
+            class="bg-cover bg-center md:h-[362px] md:w-[492px] h-[308px] w-[397px] relative mx-auto"
+          >
+            <img
+              class="md:h-[700px] md:w-[463px] h-[583px] w-[463px] ml-[-7px] mt-[-279px] md:mt-[-340px]"
+              src="./Images/chef.png"
+              alt=""
+            />
+            <!-- abs div -->
+
+            <img
+              class="absolute md:left-[281px] md:top-[290px] top-[238px] left-[80px]"
+              src="./Images/comment.png"
+              alt=""
+            />
+            <p
+              class="absolute md:left-[337px] md:top-[343px] top-[292px] left-[157px] text-xl"
+            >
+              Our Best Chef 😁
+            </p>
+            <img
+              class="absolute md:left-[-27px] md:top-[156px] top-[135px] left-[-23px]"
+              src="./Images/imoji.png"
+              alt=""
+            />
+            <img
+              class="absolute md:left-[469px] md:top-[154px] top-[147px] left-[350px]"
+              src="./Images/pizza.png"
+              alt=""
+            />
+          </div>
+          <!-- 2 -->
+          <div class="mt-[-211px]">
+            <div class="flex flex-col">
+              <p class="text-[#FF6868] text-xl leading-[24px]">Testimonials</p>
+              <h1
+                class="md:text-6xl text-[2.75rem] md:leading-[72px] pt-[30px] font-bold"
+              >
+                What Our Customers <br />
+                Say About Us
+              </h1>
+              <p
+                class="text-[#555555] text-[26px] leading-[40px] pt-[25px] pb-[50px]"
+              >
+                “I had the pleasure of dining at Foodi last night, and I'm still
+                raving about the experience! The attention to detail in
+                presentation and service was impeccable”
+              </p>
+            </div>
+            <!-- container -->
+            <div class="flex gap-4">
+              <div class="flex relative">
+                <div class="z-0">
+                  <img
+                    class="p-2 shadow-lg rounded-full"
+                    src="./Images/review-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="ml-[-44px] z-10">
+                  <img
+                    class="p-2 shadow-lg rounded-full bg-white"
+                    src="./Images/review-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="ml-[-2.75rem] z-50">
+                  <img
+                    class="p-2 shadow-lg rounded-full bg-white"
+                    src="./Images/review-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="content-center">
+                <p class="text-[26px] leading-[31px] font-bold pb-[13px]">
+                  Customer Feedback
+                </p>
+                <div class="flex gap-3 items-center">
+                  <i class="fa-regular fa-star text-yellow-400"></i>
+                  <p class="text-[#454545] text-[24px] leading-[29px]">4.9</p>
+                  <p class="text-[#807E7E] text-[24px] leading-[29px]">
+                    (18.6k Reviews)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Culinary section -->
+      <section class="md:mt-[207px] mt-[160px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex flex-col">
+            <p class="text-[#FF6868] text-xl leading-[24px]">
+              Our Story & Services
+            </p>
+            <h1
+              class="md:text-6xl text-[2.75rem] md:leading-[72px] pt-[30px] font-bold"
+            >
+              Our Culinary Journey <br />
+              And Services
+            </h1>
+            <p
+              class="text-[#555555] text-[26px] leading-[40px] pt-[25px] pb-[50px]"
+            >
+              Rooted in passion, we curate unforgettable dining experiences and
+              offer exceptional services, blending culinary artistry with warm
+              hospitality.
+            </p>
+
+            <div>
+              <button
+                class="hover:text-white rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-[2rem] border border-[#39DB4A] text-[20px] font-semibold"
+                type="submit"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+          <!-- 2nd grid -->
+          <div class="grid grid-cols-2 gap-[20px]">
+            <div class="mx-auto text-center p-[34px] shadow-xl">
+              <img class="mx-auto" src="./Images/l-1.png" alt="" />
+              <p
+                class="text-[#5FE26C] text-2xl leading-[29px] font-bold pt-[32px] pb-[10px]"
+              >
+                Catering
+              </p>
+              <p class="text-[#90BD95] text-xl leading-[24px]">
+                Delight your guests <br />
+                with our flavors and <br />
+                presentation
+              </p>
+            </div>
+            <div class="mx-auto text-center p-[34px] shadow-xl">
+              <img class="mx-auto" src="./Images/l-2.png" alt="" />
+              <p
+                class="text-[#5FE26C] text-2xl leading-[29px] font-bold pt-[32px] pb-[10px]"
+              >
+                Fast delivery
+              </p>
+              <p class="text-[#90BD95] text-xl leading-[24px]">
+                We deliver your order <br />
+                promptly to your <br />
+                door
+              </p>
+            </div>
+            <div class="mx-auto text-center p-[34px] shadow-xl">
+              <img class="mx-auto" src="./Images/l-3.png" alt="" />
+              <p
+                class="text-[#5FE26C] text-2xl leading-[29px] font-bold pt-[32px] pb-[10px]"
+              >
+                Online Ordering
+              </p>
+              <p class="text-[#90BD95] text-xl leading-[24px]">
+                Explore menu & order <br />
+                with ease using our <br />
+                Online Ordering
+              </p>
+            </div>
+            <div class="mx-auto text-center p-[34px] shadow-xl">
+              <img class="mx-auto" src="./Images/l-4.png" alt="" />
+              <p
+                class="text-[#5FE26C] text-2xl leading-[29px] font-bold pt-[32px] pb-[10px]"
+              >
+                Gift Cards
+              </p>
+              <p class="text-[#90BD95] text-xl leading-[24px]">
+                Give the gift of <br />
+                exceptional dining with <br />Foodi Gift Cards
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="mt-[10rem] inter pb-14">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
+          <div>
+            <img class="pb-6" src="./Images/nav-logo.png" alt="" />
+            <p class="text-[#555555] text-2xl leading-[35px]">
+              Savor the artistry where <br />
+              every dish is a culinary <br />
+              masterpiece
+            </p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Useful links</h1>
+            <h1><a class="text-[#555555]" href="">About us</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>Events</h1>
+            <h1><a class="text-[#555555]" href=""></a>Blogs</h1>
+            <h1><a class="text-[#555555]" href=""></a>FAQ</h1>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Main Menu</h1>
+            <h1><a class="text-[#555555]" href="">Home</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>Offers</h1>
+            <h1><a class="text-[#555555]" href=""></a>Menus</h1>
+            <h1><a class="text-[#555555]" href=""></a>Reservation</h1>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Contact Us</h1>
+            <h1><a class="text-[#555555]" href="">rhrumon@gmail.com</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>+64 958 248 966</h1>
+            <h1><a class="text-[#555555]" href=""></a>Social media</h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9">
+          <div
+            class="flex gap-[32px] md:mt-[4.25rem] md:ml-0 ml-[56px] mt-[38px]"
+          >
+            <i
+              class="fa-brands fa-facebook hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-instagram hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-square-twitter hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-youtube hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+          </div>
+          <!-- <div class="border-2 flex items-end"> -->
+          <p
+            class="text-[#555555] md:text-[22px] text-base leading-[25px] md:mt-[4.75rem] md:ml-[-244px] ml-[19px] mt-[-0.25rem]"
+          >
+            Copyright 2023 Dscode | All rights reserved
+          </p>
+          <!-- </div> -->
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
